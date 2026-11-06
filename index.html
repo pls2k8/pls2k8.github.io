@@ -257,41 +257,118 @@ background:#e5e5e5;
 margin:3em 0;
 }
 
-/* English Versionの */
+/* English Guide 全体 */
+
+.english-guide {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 10px 5px;
+}
+
+/* ページタイトル */
+
+.guide-header {
+  margin-bottom: 25px;
+}
+
+.guide-header h1 {
+  font-size: 1.9rem;
+  color: #293e50;
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+.guide-header p {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* 水平区切り線 */
+
+.guide-divider {
+  border: none;
+  height: 1px;
+  background: rgba(120, 135, 150, 0.25);
+  margin: 30px 0;
+}
+
+/* セクション見出し */
+
+.guide-section h2 {
+  font-size: 1.3rem;
+  color: #35495b;
+  margin-bottom: 18px;
+}
+
+/* 記事カード */
 
 .english-link {
   display: block;
-  padding: 16px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(150, 160, 170, 0.3);
+  border-radius: 9px;
   text-decoration: none;
   color: #333;
+  transition: background-color 0.2s;
 }
+
+/* 記事タイトル */
 
 .english-link strong {
   display: block;
-  font-size: 1.1rem;
-  margin: 5px 0;
+  font-size: 1.05rem;
+  color: #344f67;
+  margin-bottom: 9px;
 }
+
+/* 記事説明 */
 
 .english-link p {
   font-size: 0.9rem;
-  color: #666;
-  margin: 5px 0 0;
+  color: #777;
+  line-height: 1.7;
+  margin: 0;
 }
+
+/* 記事を読む */
 
 .english-link span {
   display: block;
-  color: #4387cb;
-  font-size: 0.9rem;
-  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #5685a5;
+  margin-top: 12px;
 }
 
+/* マウスを乗せたとき */
+
 .english-link:hover {
-  background-color: #f5f8fc;
+  background-color: #f5f8fa;
 }
-  
+
+/* スマートフォン */
+
+@media screen and (max-width: 768px) {
+
+  .english-guide {
+    padding: 5px 10px;
+  }
+
+  .guide-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .guide-section h2 {
+    font-size: 1.15rem;
+  }
+
+  .english-link {
+    padding: 15px;
+  }
+
+}
+
 　</style>
 </head>
 
