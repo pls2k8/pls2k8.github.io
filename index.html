@@ -372,30 +372,30 @@ margin:3em 0;
 
 }
 
-  /* 英語記事を横並びにする */
+/* 英語記事を横並びにする */
 
 .english-articles {
-  display: flex;
+  display: flex !important;
   gap: 20px;
   align-items: stretch;
 }
 
-/* 各記事の表示 */
+/* 各記事のブロック */
 
 .english-link {
   flex: 1;
-  display: block;
-  text-decoration: none;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 /* スマートフォンでは縦並び */
 
 @media screen and (max-width: 768px) {
-
   .english-articles {
     flex-direction: column;
   }
-
 }
   
 　</style>
