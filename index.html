@@ -393,18 +393,21 @@ margin:3em 0;
 /* PLS 標準写真ギャラリー */
 
 .photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 12px;
+  width: 100%;
+  border: 3px solid red;
 }
 
 .photo-gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 120px !important;
   object-fit: cover;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  display: block;
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
 }
 
 /* スマホでは縦並び */
